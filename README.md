@@ -4,14 +4,14 @@ Python control and connectivity algorithms, simulations, and system identifiers 
 
 ## Codes: 
 
-### OPC_connection:[Completed]
+### OPC_connection:
   - **OPCWrapper.py** : Wrapper class for the basic opc methods read/write/close for OPC_direct_readwrite.py to work with OPC-UA.
   - **OPC_direct_readwrite.py** : Helper functions used to perform read/write operations with OpenOPC, store and plot data for Fluid Mechatronix experiment.
   - **OPC_expert_readwrite.py** : Helper functions used to perform read/write with OPC Expert and requests module, store and plot data for Fluid Mechatronix experiment.
   - **opcda-to-opcua.py** : Modified proxy to convert opc-da tag data (in 32-bit python env) to opc-ua tag data (in 64-bit python env). The [**original proxy**](http://courses.compute.dtu.dk/02619/software/opcda_to_opcua.py) was created by [**@Eskild Schroll-Fleischer**](https://github.com/eskildsf)
   - **ua_client.py** : A working example for an opc-ua client in python-64-bit.
 
-### State Space Modelling:[Completed]
+### State Space Modelling:
   - **State_space_modelling_ex.ipynb** : Working example of state space model implemented in python
   - **gif_plot.ipynb** : A plotting function to create a gif plot from state space data saved as a csv.
   - **animated_plot.py** : A plotting function to create a gif plot with matlab animation module. (faster than gif_plot.py)
@@ -19,7 +19,7 @@ Python control and connectivity algorithms, simulations, and system identifiers 
   - **plotter.py** : Online plotting function to plot data in real-time. Works with both simulated and experimental environments.
   - **online_plot.py** : stand-alone online plotter function (older version of plotter.py), redundant since plotter.py was made.
 
-### System Identification:[Completed]
+### System Identification:
   - **sysID_modellign.m** : A compilation of multiple system models for Fluid Mechatronix in matlab.
     1. FOPTD and SOPTD 
     2. SOPTD with custom parameters
@@ -30,12 +30,12 @@ Python control and connectivity algorithms, simulations, and system identifiers 
   - **pysindy.ipynb** : pySINDy (Sparse Indetification of Non-Linear Dynamics) based SISO and SIMO models for Fluid Mechatronix in python.
   - **rgs_signal.m** : Function to generate RGS signal in matlab.
 
-### Automation:[In Progress]
+### Automation [In Progress]:
   - **constants.py** : Stores all global constants used by fsm_states.py
   - **fsm_states.py** : Finite state machine based model, will be used in conjunction with RL based agents to automate Fluid Mechatronix lab machine.
   - **plotter.py** : Almost identical to the pre-existing plotter.py in State_space_modelling/ directory with minor changes.
 
-### RL Agents:[In Progress]
+### RL Agents [In Progress]:
   - **Qlearning.ipynb** : Q learning based agent for simulated environment (based on Fluid Mechatronix lab machine).
   - **A2C.py** : Advantage Actor Critic agent trained on simulated environment.
   - **A3C.py** : Asynchronous Advantage Actor Critic agent trained on simulated environment for 3000 episodes.
