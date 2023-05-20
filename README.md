@@ -40,20 +40,13 @@ Python control and connectivity algorithms, simulations, and system identifiers 
   - **A2C.py** : Advantage Actor Critic agent trained on simulated environment.
   - **A3C.py** : Asynchronous Advantage Actor Critic agent trained on simulated environment for 3000 episodes.
   - **A2C/A3C Agents** : Actor and Critic agent weights (as .h5 files)
+
+
 ## Data:
 
 ### Plots and Data:
 
-Numerical data is saved as 'csv/mat' files and plots as 'pdf'/'png/gif' files.
-
-### sysID_data:
-  - **0SysID_trainingData.mat**: training data for system identification. (Originally created by Bowen Liu)
-  - **0SysID_testingData.mat**: testing data for system identification. (Originally created by Bowen Liu)
-  - **0SysID_SignalData.mat**: RGS signal data used to excite the system. 
-  - train_data, test_data and simo_data are csv files with identical data as previously mentioned sysID .mat files.
-  
 ### State Space Modelling:
-  - **Sim_data.csv** : Simulation data generated from State_space_modelling_ex.ipynb.
   - **eg.gif** : Gif plot generated from either gif_plot.ipynb or animated_plot.py.
   
 ### img_refs:
