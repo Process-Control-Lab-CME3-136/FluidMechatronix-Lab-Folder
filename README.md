@@ -1,7 +1,8 @@
-# CO-OP Summary (Updated: April 30, 2023)
-## Khush Harman Singh Sekhon
+# FLUIDMechatronix™: Connectivity, Identification, and Advanced Control via Python (Updated: April 30, 2023)
 
-## Code: 
+Python control and connectivity algorithms, simulations, and system identifiers for the [FLUIDMechatronix™](https://www.turbinetechnologies.com/educational-lab-products/pump-lab-with-automation) process automation and pumps teaching system, developed by [_Khush Harman Singh Sekhon_](https://github.com/ginni0002), Purushottama Dasari, Om Prakash, and and [_Oguzhan Dogru_](https://github.com/oguzhan-dogru). Contact [dogru@ualberta.ca](mailto:dogru@ualberta.ca?subject=[GitHub]%20Fluid%20Mechatronix) for the details/datasets.
+
+## Codes: 
 
 ### OPC_connection:[Completed]
   - **OPCWrapper.py** : Wrapper class for the basic opc methods read/write/close for OPC_direct_readwrite.py to work with OPC-UA.
@@ -18,17 +19,6 @@
   - **plotter.py** : Online plotting function to plot data in real-time. Works with both simulated and experimental environments.
   - **online_plot.py** : stand-alone online plotter function (older version of plotter.py), redundant since plotter.py was made.
 
-### Automation:[Working]
-  - **constants.py** : Stores all global constants used by fsm_states.py
-  - **fsm_states.py** : Finite state machine based model, will be used in conjunction with RL based agents to automate Fluid Mechatronix lab machine.
-  - **plotter.py** : Almost identical to the pre-existing plotter.py in State_space_modelling/ directory with minor changes.
-
-### RL Agents:[Working]
-  - **Qlearning.ipynb** : Q learning based agent for simulated environment (based on Fluid Mechatronix lab machine).
-  - **A2C.py** : Advantage Actor Critic agent trained on simulated environment.
-  - **A3C.py** : Asynchronous Advantage Actor Critic agent trained on simulated environment for 3000 episodes.
-  - **A2C/A3C Agents** : Actor and Critic agent weights (as .h5 files)
-
 ### System Identification:[Completed]
   - **sysID_modellign.m** : A compilation of multiple system models for Fluid Mechatronix in matlab.
     1. FOPTD and SOPTD 
@@ -40,6 +30,16 @@
   - **pysindy.ipynb** : pySINDy (Sparse Indetification of Non-Linear Dynamics) based SISO and SIMO models for Fluid Mechatronix in python.
   - **rgs_signal.m** : Function to generate RGS signal in matlab.
 
+### Automation:[In Progress]
+  - **constants.py** : Stores all global constants used by fsm_states.py
+  - **fsm_states.py** : Finite state machine based model, will be used in conjunction with RL based agents to automate Fluid Mechatronix lab machine.
+  - **plotter.py** : Almost identical to the pre-existing plotter.py in State_space_modelling/ directory with minor changes.
+
+### RL Agents:[In Progress]
+  - **Qlearning.ipynb** : Q learning based agent for simulated environment (based on Fluid Mechatronix lab machine).
+  - **A2C.py** : Advantage Actor Critic agent trained on simulated environment.
+  - **A3C.py** : Asynchronous Advantage Actor Critic agent trained on simulated environment for 3000 episodes.
+  - **A2C/A3C Agents** : Actor and Critic agent weights (as .h5 files)
 ## Data:
 
 ### Plots and Data:
